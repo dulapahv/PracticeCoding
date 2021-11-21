@@ -1,0 +1,12 @@
+release/dialog.o
+release/fourth.o
+release/main.o
+release/mainwindow.o
+release/secdialog.o
+release/third.o
+release/qrc_resource.o
+release/moc_dialog.o
+release/moc_fourth.o
+release/moc_mainwindow.o
+release/moc_secdialog.o
+release/moc_third.o

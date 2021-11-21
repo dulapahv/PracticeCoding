@@ -1,0 +1,34 @@
+// Element access:
+
+// reference operator [g] – Returns a reference to the element at position ‘g’ in the vector
+// at(g) – Returns a reference to the element at position ‘g’ in the vector
+// front() – Returns a reference to the first element in the vector
+// back() – Returns a reference to the last element in the vector
+// data() – Returns a direct pointer to the memory array used internally by the vector to store its owned elements.
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+  
+int main()
+{
+    vector<int> g1;
+  
+    for (int i = 1; i <= 10; i++)
+        g1.push_back(i * 10);
+  
+    cout << "\nReference operator [g] : g1[2] = " << g1[2]; // Reference operator [g] : g1[2] = 30
+  
+    cout << "\nat : g1.at(4) = " << g1.at(4); // at : g1.at(4) = 50
+  
+    cout << "\nfront() : g1.front() = " << g1.front(); // front() : g1.front() = 10
+  
+    cout << "\nback() : g1.back() = " << g1.back(); // back() : g1.back() = 100
+  
+    // pointer to the first element
+    int* pos = g1.data();
+  
+    cout << "\nThe first element is " << *pos; // The first element is 10
+    return 0;
+}
