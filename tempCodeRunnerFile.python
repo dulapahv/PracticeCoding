@@ -1,0 +1,10 @@
+x = 0
+
+class WhattheHell(RuntimeError):
+    pass
+
+try:
+    if x < 5:
+        raise WhattheHell
+except WhattheHell:
+    print("No value under 5")
