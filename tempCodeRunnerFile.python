@@ -1,10 +1,4 @@
-x = 0
+tagList = ["lolicon", "maid", "neko", "guro", "sounding"]
+copyList = [kuytoo for kuytoo in tagList if "i" in kuytoo]
 
-class WhattheHell(RuntimeError):
-    pass
-
-try:
-    if x < 5:
-        raise WhattheHell
-except WhattheHell:
-    print("No value under 5")
+print(copyList)
