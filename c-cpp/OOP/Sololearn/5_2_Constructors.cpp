@@ -26,5 +26,5 @@ int main() {
     myClass ob1("n0miya");
     myClass ob2("NuK0uMi");
     std::cout << ob1.getName() << "\n";
-    std::cout << ob2.getName();
+    std::cout << ob2.getName() << "\n";
 }
