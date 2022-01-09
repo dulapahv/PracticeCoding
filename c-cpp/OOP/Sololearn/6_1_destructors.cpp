@@ -1,19 +1,4 @@
-// The name of a destructor will be exactly the same as the class, 
-// only prefixed with a tilde (~). A destructor can't return a value or take any parameters.
+// Remember constructors? They're special member functions that are automatically called when an object is created.
+// Destructors are special functions, as well. They're called when an object is destroyed or deleted.
 
-// Destructors can be very useful for releasing resources before coming out of the program. 
-// This can include closing files, releasing memory, and so on.
-
-// Since destructors can't take parameters, they also can't be overloaded.
-// Each class will have just one destructor.
-
-// Defining a destructor is not mandatory; if you don't need one, you don't have to define one.
-
-#include <iostream>
-
-class MyClass {
-    public:
-        ~MyClass() {
-            // some code
-        }
-};
+// Objects are destroyed when they go out of scope, or whenever the delete expression is applied to a pointer directed at an object of a class.
