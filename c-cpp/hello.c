@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     printf("test1\0test2");
 }
