@@ -1,0 +1,1 @@
+cp -r {dir1} {dir2}	    # Recursive, copy directory and all subdirs.

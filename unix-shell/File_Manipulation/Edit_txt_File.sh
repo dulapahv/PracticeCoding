@@ -1,0 +1,1 @@
+gedit {filename}	# Basic text editor

@@ -1,0 +1,1 @@
+pwd	    # Show where you are as full path. Useful if you're lost or exploring.
