@@ -18,7 +18,7 @@ returns a value for the whole switch-case block.
 */
 
 
-class myClass {
+public class myClass {
     public static void main(String[] args) {
         int day = 2;
         String dayType  = switch(day) {
@@ -28,7 +28,7 @@ class myClass {
         };
         System.out.println(dayType);
 
-        
+
         String coffee = "Espresso";
         int price = switch(coffee) {
             case "Espresso" -> 1;

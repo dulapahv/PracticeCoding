@@ -1,6 +1,6 @@
 /* do...while loop is guaranteed to execute at least one time. */
 
-class DoWhileLoops {
+public class DoWhileLoops {
     public static void main(String[] args) {
         int x = 3;
         do {
