@@ -3,17 +3,16 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 class MyCanvas extends JComponent {
-
-  public void paint(Graphics g) {
-    g.drawRect (10, 10, 200, 200);  
-  }
+    public void paint(Graphics g) {
+        g.drawRect (10, 10, 200, 200);  
+    }
 }
 
 public class DrawRect {
-  public static void main(String[] a) {
-    JFrame window = new JFrame();
+  public static void main(String[] args) {
+    JFrame window = new JFrame("DrawRect");
     window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    window.setBounds(30, 30, 300, 300);
+    window.setBounds(30, 30, 300, 300);  // spawn windows at 30, 30 with size 300 x 300
     window.getContentPane().add(new MyCanvas());
     window.setVisible(true);
   }
