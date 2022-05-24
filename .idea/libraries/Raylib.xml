@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Raylib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/c-cpp/Raylib/game-premake-main.zip!/" />
+      <root url="jar://$PROJECT_DIR$/c-cpp/Raylib/raylib-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

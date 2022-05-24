@@ -1,9 +1,10 @@
 /*
 LinkedList
-[Data][Pointer to next data (Next)] -> [Data][Pointer to next data (Next)] -> ... -> null
+[Data][Pointer to next data (Next)] -> [Data][Pointer to next data (Next)] -> ... -> NULL
 
 Comparable to C++ vector
 */
+
 
 import java.util.LinkedList;
 

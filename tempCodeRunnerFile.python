@@ -1,4 +1,2 @@
-tagList = ["lolicon", "maid", "neko", "guro", "sounding"]
-copyList = [kuytoo for kuytoo in tagList if "i" in kuytoo]
-
-print(copyList)
+#python program to remove duplicating numbers from string
+print(sorted(list(set(num for num in input()))))
