@@ -2,12 +2,15 @@ import turtle
 
 t = turtle.Turtle()
 
+t.fillcolor('blue')
 t.begin_fill()
-t.fd(100)
-t.lt(120)
-t.fd(100)
-t.lt(120)
-t.fd(100)
+for i in range(4):
+    t.fd(100)
+    t.rt(90)
+t.end_fill()
+t.begin_fill()
+t.fillcolor('#44FF3B')
+t.circle(50)
 t.end_fill()
 
 turtle.done()

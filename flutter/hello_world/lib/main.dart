@@ -539,19 +539,36 @@ class MyStatelessWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle style =
+        TextButton.styleFrom(primary: Theme.of(context).colorScheme.onPrimary);
     return Scaffold(
       backgroundColor: Colors.grey[800],
       appBar: AppBar(
-        backgroundColor: Colors.pink[500],
-        title: const Center(
-          child: Text('Test App'),
-        ),
-      ),
+          backgroundColor: Colors.pink[500],
+          title: const Center(
+            child: Text('Test App'),
+          ),
+          actions: newMethod(style)),
       body: const Center(
         child: Image(
           image: AssetImage('images/chocola.png'),
         ),
       ),
     );
+  }
+
+  List<Widget> newMethod(ButtonStyle style) {
+    return <Widget>[
+      TextButton(
+        style: style,
+        onPressed: () {},
+        child: const Text('Action 1'),
+      ),
+      TextButton(
+        style: style,
+        onPressed: () {},
+        child: const Text('Action 2'),
+      ),
+    ];
   }
 }
