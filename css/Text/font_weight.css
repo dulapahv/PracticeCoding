@@ -1,0 +1,19 @@
+p.light {
+	font-weight: lighter;
+}
+
+p.bold {
+	font-weight: bold;
+}
+
+p.bolder {
+	font-weight: bolder;
+}
+
+/*
+You can also define the font weight with a number from 100 (thin) to 900 (thick), according to how thick you want the text to be.
+400 is the same as normal, and 700 is the same as bold.
+*/
+p.thick {
+	font-weight: 900;
+}
