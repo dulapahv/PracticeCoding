@@ -1,0 +1,7 @@
+img {
+	float: right;
+}
+/*
+If you place several floating elements one after the other, they will float next to each other if there is enough room.
+Set the floating of each element to the same value
+*/

@@ -1,0 +1,23 @@
+/* When setting the style for several link states, there are some order rules:
+- a:hover MUST come after a:link and a:visited
+- a:active MUST come after a:hover
+
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+*/
+
+a:hover {
+	color: red;
+}
+
+/*
+The following properties are used to control the look and feel of links:
+border:none - removes border from images with links
+outline:none - removes the dotted border on clicked lines in IE
+*/
+
+a:link {
+	text-decoration: none;
+}

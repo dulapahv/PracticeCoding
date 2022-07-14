@@ -1,0 +1,10 @@
+body {
+	background-image: url("arona.png");
+	background-color: #e9e9e9;
+}
+
+p {
+	padding: 30px;
+	background-image: url("arona2.jpg");
+	color: white;
+}

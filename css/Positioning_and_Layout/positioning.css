@@ -1,0 +1,15 @@
+p.position_static {
+	position:static;
+	top: 30px;
+	right: 5px;
+	color: red;
+}
+
+p.position_fixed {
+	position: fixed;
+	top: 30px;
+	right: 5px;
+	color: red;
+}
+
+/* or relative */

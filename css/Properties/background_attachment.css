@@ -1,0 +1,5 @@
+body {
+	background-image: url("arona.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;  /* or scroll */
+}

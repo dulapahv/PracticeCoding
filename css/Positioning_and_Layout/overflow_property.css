@@ -1,0 +1,7 @@
+div {
+	width: 150px;
+	height: 150px;
+	background-color: lightblue;
+	float: left;
+	overflow: auto; /* scroll, auto or hidden. Auto will add scrollbar if clipped */
+}

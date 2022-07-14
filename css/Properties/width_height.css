@@ -1,0 +1,23 @@
+div {
+	border: 5px;
+	border-style: solid;
+	border-color: green;
+	width: 90px;
+	height: 90px;
+}
+
+div.test {
+	border: 5px solid green;
+	width: 100%;
+	height: 90px;
+}
+
+p.first {
+	border: 5x solid green;
+	min-height: 100px;
+}
+
+p.second {
+	border: 5x solid;
+	min-height: 100px;
+}

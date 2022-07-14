@@ -1,0 +1,5 @@
+div.hidden {
+	visibility: hidden;
+}
+
+/* visibility:none hides an element, but display:none will also remove place for that element */

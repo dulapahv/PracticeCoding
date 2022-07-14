@@ -1,0 +1,6 @@
+table {
+	border-collapse: separate;
+	border-spacing: 20px 40px;
+	empty-cells: hide;
+	table-layout: auto;  /* and fixed */
+}
