@@ -1,0 +1,8 @@
+@font-face {
+	font-family: MesloLGS;
+	src: url("MesloLGS.ttf");
+}
+
+h1 {
+	font-family: MesloLGS;
+}

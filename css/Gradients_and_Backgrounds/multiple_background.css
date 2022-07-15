@@ -1,0 +1,7 @@
+div {
+	width: 1920px;
+	height: 1080px;
+	background-image: url(arona.png), url(arona2.jpg);
+	background-position: right bottom, left top;
+	background-repeat: no-repeat;
+}

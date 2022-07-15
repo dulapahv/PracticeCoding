@@ -1,0 +1,26 @@
+div {
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin: 4px;
+	color: #fff;
+	background: linear-gradient(blue 20%, yellow 30%, green 85%);
+}
+
+div.first {
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin: 4px;
+	color: #fff;
+	background: repeating-linear-gradient(45deg, blue, green, white 20px);
+}
+
+div.second {
+	float: left;
+	width: 300px;
+	height: 100px;
+	margin: 4px;
+	color: #fff;
+	background: linear-gradient(120deg, blue, green, white);
+}

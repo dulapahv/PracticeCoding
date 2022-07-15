@@ -1,0 +1,13 @@
+::first-line {
+	color: #589432;
+}
+
+p::selection {
+	background: #8bc34a;
+	color: #fff;
+}
+
+p::before {
+	/* and also ::after */
+	content: url("arona.png");
+}

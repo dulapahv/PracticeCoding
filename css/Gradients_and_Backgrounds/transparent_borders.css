@@ -1,0 +1,4 @@
+div {
+	border: 20px solid rgba(0, 0, 0, 0.3);
+	background-clip: padding-box;
+}

@@ -1,0 +1,13 @@
+h1 {
+	border-radius: 20px;
+	background-color: green;
+	color: white;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: green;
+	color: white;
+}

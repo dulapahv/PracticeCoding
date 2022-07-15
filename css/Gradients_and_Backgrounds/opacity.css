@@ -1,0 +1,14 @@
+#img1 {
+	background-image: url("arona.png");
+	opacity: 1;
+}
+
+#img2 {
+	background-image: url("arona.png");
+	opacity: 0.5;
+}
+
+#img3 {
+	background-image: url("arona.png");
+	opacity: 0.25;
+}

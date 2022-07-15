@@ -1,0 +1,22 @@
+div {
+	width: 300px;
+	height: 100px;
+	background-color: #9acd32;
+	box-shadow: -10px -10px 5px -5px #888888;
+	/* horizontal offset, vertical offset, blur [optional], spread [optional], color */
+}
+
+div.inner {
+	width: 300px;
+	height: 100px;
+	background-color: #9acd32;
+	box-shadow: inset 10px 10px 5px #888888;
+}
+
+div.mix {
+	width: 300px;
+	height: 100px;
+	background-color: #9acd32;
+	box-shadow: 0 0 10px 4px #ff6347, 0 0 10px 30px #ffdab9,
+		30px 0 20px 30px #b0e0e6;
+}

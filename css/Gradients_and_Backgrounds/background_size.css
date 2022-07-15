@@ -1,0 +1,24 @@
+div {
+	height: 150px;
+	width: 200px;
+	border: 1px solid #000;
+	background: url("arona2.jpg") no-repeat 50% 50%;
+	background-size: 200px 100px;
+}
+
+div.first {
+	height: 150px;
+	width: 200px;
+	border: 1px solid #000;
+	background: url("arona2.jpg") no-repeat 50% 50%;
+	background-size: contain; /* The contain keyword scales the image so that it fits the container. */
+}
+
+div.second {
+	height: 150px;
+	width: 200px;
+	border: 1px solid #000;
+	background: url("arona2.jpg") no-repeat 50% 50%;
+	background-size: contain; /* image is scaled to fit the entire container; however, 
+	if that has a different aspect ratio, the image will be cropped: */
+}

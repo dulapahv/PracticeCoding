@@ -1,0 +1,18 @@
+#first {
+	border: 2px dotted black;
+	padding: 20px;
+	background: LightBlue;
+	background-clip: padding-box;
+}
+
+#second {
+	border: 2px dotted black;
+	padding: 20px;
+	background: LightBlue;
+	background-clip: content-box;
+}
+
+div {
+	background-image: url("arona2.jpg");
+	background-clip: content-box;
+}
