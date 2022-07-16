@@ -1,0 +1,33 @@
+div {
+	width: 500px;
+	height: 250px;
+	background-color: blue;
+	color: white;
+}
+
+div.X {
+	transform: rotateX(150deg);
+}
+
+div.Y {
+	transform: rotateY(150deg);
+}
+
+div.Z {
+	transform: rotateZ(150deg);
+}
+
+#mybox1 {
+	transform: translate3d(-20px, 4em, 10px);
+	/* transform: translateX(29px) translateY(5em) translateZ(-13px); */
+}
+
+div.empty-div {
+	background-color: green;
+	perspective: 100px;
+}
+
+div.green-div {
+	background-color: green;
+	transform: rotateX(45deg);
+}

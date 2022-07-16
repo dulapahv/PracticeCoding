@@ -1,0 +1,30 @@
+div {
+	width: 50px;
+	height: 50px;
+	background: #32CD32;
+	transition: width 3s;
+}
+
+div.first {
+	width: 50px;
+	height: 50px;
+	background: #32CD32;
+	transition-timing-function: cubic-bezier(0, 0, 0, 1)
+}
+
+div:hover {
+	width: 250px;
+}
+
+/*
+The transition-timing-function property specifies the speed curve of the transition effect.
+It can have the following values:
+ease - the animation starts slowly, then accelerates quickly.
+ease-in - starts slowly, then accelerates, and stops abruptly.
+ease-out - starts quickly, but decelerates to a stop.
+ease-in-out - similar to ease, but with more subtle acceleration and deceleration.
+linear - constant speed throughout the animation; often best for color or opacity changes.
+
+Finally, we have cubic-bezier(), which allows you to define your own values in 
+the cubic-bezier function. Possible values are numeric values from 0 to 1.
+*/
