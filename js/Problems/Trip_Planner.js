@@ -13,7 +13,6 @@ Explanation: It will take 150/40 = 3.75 hours to cover the distance, which is eq
 */
 
 function main() {
-    var distance = parseInt(readLine(), 10);
-    console.log((distance / 40) * 60)
+	var distance = parseInt(readLine(), 10);
+	console.log((distance / 40) * 60);
 }
-

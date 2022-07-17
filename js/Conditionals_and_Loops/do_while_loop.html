@@ -1,24 +1,28 @@
-<html>
-    <body>
-        <script>
-            /*
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8" />
+	<head>
+		<title>do-while loop</title>
+	</head>
+	<body>
+		<script>
+			/*
             do {
                 code block
             }
                 while (condition);
             */
 
-            var i = 20;
-            do {
-                document.write(i + "<br/>");
-                i++;
-            }
-            while (i <= 25);
+			var i = 20;
+			do {
+				document.write(i + "<br/>");
+				i++;
+			} while (i <= 25);
 
-            /*
+			/*
             The loop will always be executed at least once, even if the condition is false, 
             because the code block is executed before the condition is tested.
             */
-        </script>
-    </body>
+		</script>
+	</body>
 </html>
