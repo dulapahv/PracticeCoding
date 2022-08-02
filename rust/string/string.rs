@@ -39,21 +39,21 @@ fn main() {
     let content_string = String::from("n0miya");
     println!("length is {}", content_string.len());
 
-	/* STRING CONCATENATION */
-	println!("\nSTRING CONCATENATION");
-	let n1 = "Hello".to_string();
-	let n2 = " World".to_string();
+    /* STRING CONCATENATION */
+    println!("\nSTRING CONCATENATION");
+    let n1 = "Hello".to_string();
+    let n2 = " World".to_string();
 
-	let n3 = n1 + &n2; // n2 reference is passed
-	println!("{n3}");
+    let n3 = n1 + &n2; // n2 reference is passed
+    println!("{n3}");
 
-	/* format! MACRO */
-	println!("\nformat! MACRO");
+    /* format! MACRO */
+    println!("\nformat! MACRO");
 
-	let n1 = "Hello";
-	let n2 = "World";
-	let n3 = format!("{n1}+ +{n2}");
-	println!("{n3}");
+    let n1 = "Hello";
+    let n2 = "World";
+    let n3 = format!("{n1}+ +{n2}");
+    println!("{n3}");
 
     /*
         https://www.tutorialspoint.com/rust/rust_string.htm
@@ -119,32 +119,32 @@ fn main() {
     let mut i = 1;
 
     for token in msg.split_whitespace() {
-		println!("token {i}: {token}");
-		i += 1;
-	}
+        println!("token {i}: {token}");
+        i += 1;
+    }
 
-	/* split() */
-	println!("\nsplit()");
-	let fullname = "red,green,blue";
+    /* split() */
+    println!("\nsplit()");
+    let fullname = "red,green,blue";
 
-	for token in fullname.split(",") {
-		println!("token is {token}");
-	}
+    for token in fullname.split(",") {
+        println!("token is {token}");
+    }
 
-	// store in a vector
-	let tokens:Vec<&str> = fullname.split(",").collect();
-	println!("first is {}", tokens[0]);
-	println!("second is {}", tokens[1]);
-	println!("third is {}", tokens[2]);
+    // store in a vector
+    let tokens: Vec<&str> = fullname.split(",").collect();
+    println!("first is {}", tokens[0]);
+    println!("second is {}", tokens[1]);
+    println!("third is {}", tokens[2]);
 
-	/* chars() */
-	println!("\nchars");
+    /* chars() */
+    println!("\nchars");
 
-	let n1 = "Tutorials".to_string();
+    let n1 = "Tutorials".to_string();
 
-	for n in n1.chars() {
-		println!("{n}");
-	}
+    for n in n1.chars() {
+        println!("{n}");
+    }
 }
 
 fn print_literal(data: &str) {

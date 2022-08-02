@@ -5,6 +5,13 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"type": "java",
+			"name": "Launch test",
+			"request": "launch",
+			"mainClass": "test",
+			"projectName": "PracticeCoding_eb3b32ad"
+		},
+		{
 			"type": "lldb",
 			"request": "launch",
 			"name": "Debug",
