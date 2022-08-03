@@ -17,5 +17,5 @@ public class TryThrow {
 
     public static void main(String[] args) {
         System.out.println(div(2, 0));
-    }
+    } */
 }

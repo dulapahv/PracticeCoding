@@ -14,7 +14,7 @@ Read a word - next()
 import java.util.Scanner;
 
 public class myClass {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Scanner myVar = new Scanner(System.in);
         System.out.println(myVar.nextLine());
     }
