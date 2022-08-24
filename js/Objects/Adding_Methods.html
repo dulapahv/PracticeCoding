@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html leng="en">
+	<meta charset="utf-8" />
+	<head>
+		<title>Adding Method</title>
+	</head>
+	<body>
+		<script>
+			var person = {
+				name: "Nuko",
+				age: 20,
+				favColor: "pink",
+				height: 165,
+				sayName: function() {
+					document.writeln(this.name);
+				},
+				changeName: function(name) {
+					this.name = name;
+				}
+			};
+
+			person.sayName();
+			person.changeName("n0miya");
+			person.sayName();
+
+			function person(name, age) {
+				this.name = name;
+				this.age = age;
+				this.changeName() = function(name) {
+					this.name = name;
+				};
+				this.yearOfBirth = bornYear;
+			}
+			function bornYear() {
+				return 2016 - this.age;
+			}
+
+			var p = new Person("Nuko", 20);
+			p.changeName("n0miya");
+		</script>
+	</body>
+</html>

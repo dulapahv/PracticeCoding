@@ -2,11 +2,21 @@
 <html lang="en">
 	<meta charset="utf-8" />
 	<head>
-		<title>Introducing Objects</title>
+		<title>Creating Objects</title>
 	</head>
 	<body>
 		<script>
-			
+			function person(name, age, color) {
+				this.name = name;
+				this.age = age;
+				this.color = color;
+			}
+
+			var p1 = new person("Nuko", 20, "pink");
+			var p2 = new person("n0miya", 19, "blue");
+
+			document.writeln(p1.name);
+			document.writeln(p2.name);
 		</script>
 	</body>
 </html>

@@ -21,12 +21,11 @@ Hint: You can use a loop to calculate the distance the snail covers each day, an
 */
 
 function main() {
-    var depth = parseInt(readLine(), 10);
-    for (i = 0; depth > 0;) {
-        i++;
-        depth -= 7
-        if (depth > 0)
-            depth += 2
-    }
-    console.log(i);
+	var depth = parseInt(readLine(), 10);
+	for (i = 0; depth > 0; ) {
+		i++;
+		depth -= 7;
+		if (depth > 0) depth += 2;
+	}
+	console.log(i);
 }

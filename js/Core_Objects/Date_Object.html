@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>Date Object</title>
+	</head>
+	<body>
+		<script>
+			function myAlert() {
+				alert("Hi");
+			}
+
+			setInterval(myAlert, 3000);
+			/* This will call the myAlert function every 3 seconds (1000 ms = 1 second). */
+
+			var d = new Date(); // d stores current date and time
+
+			/*
+			The other ways to initialize dates allow for the creation of new date objects from the specified date and time
+			new Date(milliseconds)
+			new Date(dateString)
+			new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+			//Fri Jan 02 1970 00:00:00
+			var d1 = new Date(86400000); 
+
+			//Fri Jan 02 2015 10:42:00
+			var d2 = new Date("January 2, 2015 10:42:00");
+
+			//Sat Jun 11 1988 11:42:00
+			var d3 = new Date(88,5,11,11,42,0,0);
+
+			Date methods: https://api.sololearn.com/DownloadFile?id=2772
+			*/
+
+			var hours = d.getHours();
+
+			function printTime() {
+				var d = new Date();
+				var hours = d.getHours();
+				var mins = d.getMinutes();
+				var secs = d.getSeconds();
+				document.body.innerHTML = hours + ":" + mins + ":" + secs;
+
+				/*
+				The innerHTML property sets or returns the HTML content of an element.
+				In our case, we are changing the HTML content of our document's body.
+				This overwrites the content every second, instead of printing it repeatedly to the screen.
+				*/
+			}
+			setInterval(printTime, 100);
+		</script>
+	</body>
+</html>

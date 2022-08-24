@@ -17,5 +17,6 @@ public class myClass {
     public static void main(String[] args) throws Exception{
         Scanner myVar = new Scanner(System.in);
         System.out.println(myVar.nextLine());
+		myVar.close();
     }
 }
