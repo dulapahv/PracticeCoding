@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>Rest & Spread</title>
+	</head>
+	<body>
+		<script>
+			function containsAll(arr) {
+				for (let i = 1; i < arguments.length; i++) {
+					let num = arguments[i];
+					if (arr.indexOf(num) === -1) {
+						return false;
+					}
+				}
+				return true;
+			}
+
+			let x = [2, 4, 6, 7];
+			document.writeln(containsAll(x, 2, 4, 7));
+			document.writeln(containsAll(x, 6, 4, 9));
+
+			/*
+			While this does the job, ES6 provides a more readable syntax to
+			achieve variable number of parameters by using a rest parameter:
+			*/
+			function containsAll2(arr, ...nums) {
+				for (let num of nums) {
+					if (arr.indexOf(num) === -1) {
+						return false;
+					}
+				}
+				return true;
+			}
+			/*
+			The ...nums parameter is called a rest parameter. It takes all the
+			"extra" arguments passed to the function. The three dots (...) are
+			called the Spread operator.
+			*/
+			document.writeln(containsAll2(x, 2, 4, 7));
+			document.writeln(containsAll2(x, 6, 4, 9));
+
+			/*
+			It is common to pass the elements of an array as arguments to a
+			function. Before ES6, we used the following method:
+			*/
+			function myFunction(w, x, y, z) {
+				document.writeln(w + x + y + z);
+			}
+			var args = [1, 2, 3];
+			myFunction.apply(null, args.concat(4));
+
+			/*
+			ES6 provides an easy way to do the example above with spread
+			operators
+			*/
+			const myFunction2 = (w, x, y, z) => {
+				document.writeln(w + x + y + z);
+			};
+			let args2 = [1, 2, 3];
+			myFunction2(...args2, 4);
+		</script>
+	</body>
+</html>

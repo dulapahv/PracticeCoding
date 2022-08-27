@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>ES6 Objects</title>
+	</head>
+	<body>
+		<script>
+			/*
+			JavaScript variables can be Object data types that contain many
+			values called properties.
+			An object can also have properties that are function definitions
+			called methods for performing actions on the object.
+			ES6 introduces shorthand notations and computed property names that
+			make declaring and using objects easier to understand.
+
+			The new method definition shorthand does not require the colon (:)
+			or function keyword, as in the grow function of the tree object
+			declaration:
+			*/
+			let tree = {
+				height: 10,
+				color: "green",
+				grow() {
+					this.height += 2;
+				},
+			};
+			tree.grow();
+			document.writeln(tree.height);
+
+			/*
+			You can also use a property value shorthand when initializing
+			properties with a variable by the same name.
+			For example, properties height and health are being initialized with
+			variables named height and health
+			*/
+			let height = 5;
+			let health = 100;
+
+			let athlete = {
+				height,
+				health,
+			};
+
+			/*
+			With ES6, you can now use computed property names. Using the square
+			bracket notation [], we can use an expression for a property name,
+			including concatenating strings. This can be useful in cases where
+			we want to create certain objects based on user data (e.g. id,
+			email, and so on).
+			*/
+			let prop = "name";
+			let id = "1234";
+			let mobile = "08923";
+
+			let user = {
+				[prop]: "Jack",
+				[`user_$[id]`]: `$[mobile]`,
+			};
+			document.writeln(user.name);
+			document.writeln(user.user_1234);
+
+			/*
+			ES6 adds a new Object method assign() that allows us to combine
+			multiple sources into one target to create a single new object.
+			Object.assign() is also useful for creating a duplicate of an
+			existing object.
+			*/
+			let person = {
+				name: "Nuko",
+				age: 20,
+			};
+
+			let newPerson = Object.assign({}, person);
+			newPerson.name = "Nao";
+
+			document.writeln(person.name);
+			document.writeln(newPerson.name);
+		</script>
+	</body>
+</html>

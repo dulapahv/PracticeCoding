@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>Loops and Functions in ES6</title>
+	</head>
+	<body>
+		<script>
+			/*
+			In JavaScript we commonly use the for loop to iterate over values
+			in a list:
+			*/
+			let arr = [1, 2, 3];
+			for (let i = 0; i < arr.length; i++) {
+				document.writeln(arr[i]);
+			}
+
+			/*
+			The for...in loop is intended for iterating over the enumerable
+			keys of an object.
+			*/
+			let obj = { a: 1, b: 2, c: 3 };
+			for (let v in obj) {
+				document.writeln(v);
+			}
+
+			/*
+			The for...in loop should NOT be used to iterate over arrays because,
+			depending on the JavaScript engine, it could iterate in an arbitrary
+			order. Also, the iterating variable is a string, not a number, so if
+			you try to do any math with the variable, you'll be performing
+			string concatenation instead of addition.
+
+			ES6 introduces the new for...of loop, which creates a loop iterating
+			over iterable objects.
+			*/
+			let list = ["x", "y", "z"];
+			for (let val of list) {
+				document.writeln(val);
+			}
+
+			for (let char of "hello") {
+				document.writeln(char);
+			}
+
+			/*
+			Prior to ES6, a JavaScript function was defined like this:
+			*/
+			function add(x, y) {
+				var sum = x + y;
+				document.writeln(sum);
+			}
+
+			/*
+			ES6 introduces a new syntax for writing functions.
+			The same function from above can be written as:
+			*/
+			const add2 = (x, y = 5) => {
+				let sum = x + y;
+				document.writeln(sum);
+			};
+
+			add(3, 5);
+			add2(3);
+
+			const greet = (x) => "Welcome " + x;
+			document.writeln(greet("Nuko"));
+
+			/*
+			If there are no parameters, an empty pair of parentheses should
+			be used, as in
+			*/
+			const warn = () => alert("Warning");
+
+			/*
+			The syntax is very useful for inline functions. For example, let's
+			say we have an array, and for each element of the array we need to
+			execute a function. We use the forEach method of the array to call
+			a function for each element:
+			*/
+			var test = [2, 3, 4, 5];
+
+			test.forEach(function (elem) {
+				document.writeln(elem);
+			});
+
+			/*
+			However, in ES6, the code above can be rewritten as following:
+			*/
+			const test2 = [2, 3, 4, 5];
+
+			test2.forEach((elem) => {
+				document.writeln(elem);
+			});
+		</script>
+	</body>
+</html>

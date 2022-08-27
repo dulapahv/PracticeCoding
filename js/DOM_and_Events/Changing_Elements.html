@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8" />
+	<head>
+		<title>Changing Elements</title>
+	</head>
+	<body>
+		<a href="http://www.w3schools.com/jsref/dom_obj_event.asp">Some link</a>
+		<div id="demo" style="width:200px">Some Text</div>
+		<img id="myimg" src="chocola.png" alt="" />
+		<script>
+			var el = document.getElementById("myimg");
+			el.src = "vanilla.png";
+
+			var link = document.getElementsByTagName("a");
+			link[0].href = "http://www.google.com/";
+
+			var x = document.createElement("demo");
+			x.style.color = "0BA552";
+			x.style.width = "100px";
+		</script>
+	</body>
+</html>

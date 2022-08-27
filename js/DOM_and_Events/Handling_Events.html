@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>Handling Events</title>
+	</head>
+	<body>
+		<body onclick="show()">
+			Click Me
+		</body>
+		<script>
+			/*
+			You can write JavaScript code that executes when an event occurs,
+			such as when a user clicks an HTML element, moves the mouse, or
+			submits a form.
+			When an event occurs on a target element, a handler function is
+			executed.
+			Common HTML events include:
+			https://api.sololearn.com/DownloadFile?id=2777
+
+			Corresponding events can be added to HTML elements as attributes.
+			For example: <p onclick="someFunc()">some text</p>
+			*/
+
+			function show() {
+				alert("Hi there!");
+			}
+			/* However this is not recommended! */
+		</script>
+
+		<p id="demo">This is better</p>
+		<script>
+			var x = document.getElementById("demo");
+			x.onclick = function () {
+				document.body.innerHTML = Date();
+			};
+		</script>
+
+		<button id="demo2">Start</button>
+		<script>
+			var btn = document.getElementById("demo2");
+			btn.addEventListener("click", myFunction);
+
+			function myFunction() {
+				alert(Math.random());
+				btn.removeEventListener("click", myFunction);
+			}
+		</script>
+	</body>
+</html>

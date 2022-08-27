@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>ES6 Classes</title>
+	</head>
+	<body>
+		<script>
+			/*
+			In this lesson we'll explain how to create a class that can be used
+			to create multiple objects of the same structure.
+			A class uses the keyword class and contains a constructor method for
+			initializing.
+			*/
+			class Rectangle {
+				constructor(height, width) {
+					this.height = height;
+					this.width = width;
+				}
+				get area() {
+					return this.calcArea();
+				}
+				calcArea() {
+					return this.height * this.width;
+				}
+			}
+			/*
+			A declared class can then be used to create multiple objects using
+			the keyword new.
+			*/
+			const square = new Rectangle(5, 5);
+			document.writeln(square.area);
+
+			const poster = new Rectangle(2, 3);
+			document.writeln(poster.area);
+
+			/*
+			Another type of method is the static method, which cannot be called
+			through a class instance. Static methods are often used to create
+			utility functions for an application.
+			*/
+
+			/*
+			The extends keyword is used in class declarations or class
+			expressions to create a child of a class. The child inherits the
+			properties and methods of the parent.
+			*/
+			class Animal {
+				constructor(name) {
+					this.name = name;
+				}
+				speak() {
+					document.writeln(this.name + " makes a noise.");
+				}
+			}
+
+			class Dog extends Animal {
+				speak() {
+					document.writeln(this.name + " barks.");
+				}
+			}
+
+			let dog = new Dog("Rex");
+			dog.speak();
+		</script>
+	</body>
+</html>

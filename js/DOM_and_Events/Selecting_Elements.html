@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>Selecting ELements</title>
+	</head>
+		<div id="demo"></div>
+		<script>
+			/*
+			All HTML elements are objects. And as we know every object has
+			properties and methods.
+			The document object has methods that allow you to select the
+			desired HTML element.
+			These three methods are the most commonly used for selecting HTML
+			elements:
+
+			//finds element by id
+			document.getElementById(id) 
+
+			//finds elements by class name
+			document.getElementsByClassName(name) 
+
+			//finds elements by tag name
+			document.getElementsByTagName(name)
+			*/
+			var elem = document.getElementById("demo");
+			elem.innerHTML = "Hello World";
+		</script>
+
+		<p>hi</p>
+		<p>test</p>
+		<p>yes</p>
+		<script>
+			var arr = document.getElementsByTagName("p");
+			for (var x = 0; x < arr.length; x++) {
+				document.writeln(arr[x].innerHTML + '\n');
+			}
+		</script>
+		
+		<script>
+			/*
+			Each element in the DOM has a set of properties and methods that
+			provide information about their relationships in the DOM:
+			element.childNodes returns an array of an element's child nodes.
+			element.firstChild returns the first child node of an element.
+			element.lastChild returns the last child node of an element.
+			element.hasChildNodes returns true if an element has any child
+			nodes, otherwise false.
+			element.nextSibling returns the next node at the same tree level.
+			element.previousSibling returns the previous node at the same
+			tree level.
+			element.parentNode returns the parent node of an element.
+			*/
+		</script>
+		<div id = "testing">
+			<p>some text</p>
+			<p>some other text</p>
+		</div>
+
+		<script>
+			var a = document.getElementById("testing");
+			var arr = a.childNodes;
+			for (var x = 0; x < arr.length; x++) {
+				document.writeln(arr[x].innerHTML + '\n');
+			}
+		</script>
+	</body>
+</html>

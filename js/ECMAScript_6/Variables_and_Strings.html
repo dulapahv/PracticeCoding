@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8" />
+	<head>
+		<title>ES6 Variables and Strings</title>
+	</head>
+	<body>
+		<script>
+			/*
+			In ES6 we have three ways of declaring variables:
+			var a = 10;
+			const b = 'hello';
+			let c = true;
+
+			var defines globally
+			let defines in a scope
+			const defines in a scope, but immutable
+
+			best use of let is in loops:
+			for (let i = 0; i < 10; i++) {}
+			*/
+
+			function varTest() {
+				var x = 1;
+				if (true) {
+					var x = 2;
+					document.writeln(x); // 2
+				}
+				document.writeln(x); // 2
+			}
+
+			function letTest() {
+				let x = 1;
+				if (true) {
+					let x = 2;
+					document.writeln(x); // 2
+				}
+				document.writeln(x); // 1
+			}
+
+			varTest();
+			letTest();
+
+			/*
+			ES6 introduces a new way of outputting variable values in strings.
+			The same code above can be rewritten as:
+			*/
+			let name = "Nuko";
+			let msg = `Hello ${name}!`; // ` not '
+			document.writeln(msg);
+
+			let a = 3;
+			let b = 2;
+			document.writeln(`<br>${a + b}`);
+		</script>
+	</body>
+</html>
