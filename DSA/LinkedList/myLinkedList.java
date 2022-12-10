@@ -1,4 +1,4 @@
-public class myLinkedList {
+public class MyLinkedList {
 	public class Node {
 		int data;
 		Node next;
@@ -10,32 +10,9 @@ public class myLinkedList {
 
 	Node head = null;
 
-	/**
-	 * Get data from a linked list at the specified index.
-	 */
-	public int getAt(int i) {
-		Node p = head;
-		while (i > 0) {
-			p = p.next;
-			i--;
-		}
-		return p.data;
-	}
-
-	/**
-	 * Set data in a linked list at the specified index.
-	 */
-	public void setAt(int d, int i) {
-		Node p = head;
-		while (i > 0) {
-			p = p.next;
-			i--;
-		}
-		p.data = d;
-	}
-
-	/**
-	 * Add a data to the front of the linked list.
+	/*
+	 * This code creates a new node with the data value of d, and sets that
+	 * node as the head of the linked list.
 	 */
 	public void add(int d) {
 		Node p = new Node(d);
@@ -43,25 +20,31 @@ public class myLinkedList {
 		head = p;
 	}
 
-	/**
-	 * Add a data to the list after the specified node.
+	/*
+	 * This code is inserting a new node into a linked list.
+	 * 
+	 * The new node is created with data d. The head node is set to q.
+	 * While q has a next node and that next node's data is less than d, q is
+	 * set to the next node.
+	 * 
+	 * After the while loop, the new node's next is set to
+	 * q's next and q's next is set to the new node.
 	 */
-	public void insert(int d, Node p) {
-		Node q = new Node(d);
-		q.next = p.next;
-		p.next = q;
+	public void insert(int d) {
+		Node p = new Node(d);
+		Node q = head;
+		while (q.next != null && q.next.data < d) {
+			q = q.next;
+		}
+		p.next = q.next;
+		q.next = p;
 	}
 
-	/**
-	 * Delete a data from the list after the specified node.
-	 */
-	public void delete(Node p) {
-		p.next = p.next.next;
-	}
-
-	/**
-	 * Search for data in linked list
-	 * in main(), we must call like this: MyLinkedList.Node p = mList.find(4)
+	/*
+	 * The code is a function that finds a node with a specific data value.
+	 * 
+	 * It starts at the head node, and then iterates through each node until it
+	 * finds the desired node. If it doesn't find the node, it returns null.
 	 */
 	public Node find(int d) {
 		Node p = head;
@@ -73,14 +56,20 @@ public class myLinkedList {
 		return null;
 	}
 
-	/**
-	 * Search for data in linked list and delete it.
+	/*
+	 * This code creates a new node, t, with data d + 1 and head as its
+	 * next node.
+	 * 
+	 * It then creates a node, p, that is set to t. While p's next node is not
+	 * null and p's next node's data is d, p is set to p's next node.
+	 * If p's next node is not null, p's next node is set to p's next node's
+	 * next node. Finally, head is set to t's next node.
 	 */
-	public void find_delete(int d) {
+	public void delete(int d) {
 		Node t = new Node(d + 1);
 		t.next = head;
 		Node p = t;
-		while ((p.next != null) && p.next.data != d) {
+		while ((p.next != null) && (p.next.data == d)) {
 			p = p.next;
 		}
 		if (p.next != null) {
@@ -89,23 +78,6 @@ public class myLinkedList {
 		head = t.next;
 	}
 
-	/**
-	 * Reverse a linked list
-	 */
-	public void reverse() {
-		Node prev = null;
-		Node curr = head;
-		Node next = null;
-		while (curr != null) {
-			next = curr.next;
-			curr.next = prev;
-			prev = curr;
-			curr = next;
-		}
-		head = prev;
-	}
-
-	@Override
 	public String toString() {
 		StringBuffer sb = new StringBuffer("head ");
 		Node p = head;
