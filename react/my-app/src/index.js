@@ -1,25 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import ArrowFunctions from "./topic/ES6/ArrowFunctions";
-import Classes from "./topic/ES6/Classes";
-import Variables from "./topic/ES6/Variables";
-import ArrayMethods from "./topic/ES6/ArrayMethods";
-import Destructuring from "./topic/ES6/Destructuring";
-import SpreadOperator from "./topic/ES6/SpreadOperator";
-import TernaryOperator from "./topic/ES6/TernaryOperator";
+import ArrowFunctions from "./basics/ES6/ArrowFunctions";
+import Classes from "./basics/ES6/Classes";
+import Variables from "./basics/ES6/Variables";
+import ArrayMethods from "./basics/ES6/ArrayMethods";
+import Destructuring from "./basics/ES6/Destructuring";
+import SpreadOperator from "./basics/ES6/SpreadOperator";
+import TernaryOperator from "./basics/ES6/TernaryOperator";
 
-import Events from "./topic/Events";
+import Events from "./basics/Events";
 
-import { Conditionals1, Conditionals2 } from "./topic/Conditionals";
+import { Conditionals1, Conditionals2 } from "./basics/Conditionals";
 
-import { Lists, Keys } from "./topic/Lists";
+import { Lists, Keys } from "./basics/Lists";
 
-import { Forms, TextArea, Select } from "./topic/Forms";
+import { Forms, TextArea, Select } from "./basics/Forms";
 
-import Styling from "./topic/CSSStyling";
+import Styling from "./basics/CSSStyling";
 
-import SassStyling from "./topic/SassStyling";
+import SassStyling from "./basics/SassStyling";
+
+import ExampleHooks from "./hooks/Example";
 
 const App = () => {
     return (
@@ -48,6 +50,8 @@ const App = () => {
             {Styling()}
             <h1>Sass Styling</h1>
             {SassStyling()}
+            <h1>React Hooks</h1>
+            {ExampleHooks()}
         </div>
     );
 };
