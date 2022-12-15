@@ -1,10 +1,28 @@
 import React from "react";
+
+import {
+    Header,
+    Aboutme,
+    Experiences,
+    Projects,
+    Contact,
+    Footer,
+} from "./containers";
+import { Navbar } from "./components";
 import "./App.css";
 
 const App = () => {
     return (
-        <div className="font-sans text-8xl not-italic font-semibold text-center p-2 bg-blue-400 text-white border-4 border-yellow-500">
-            <h1>Hello World!</h1>
+        <div className="App">
+            <div className="gradient_bg">
+                <Navbar />
+                <Header />
+            </div>
+            <Aboutme />
+            <Experiences />
+            <Projects />
+            <Contact />
+            <Footer />
         </div>
     );
 };

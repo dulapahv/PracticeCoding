@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #666666;
+}
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #bbbbbb;
+    border-radius: 3px;
+}
+
+:root {
+    --font-family: "Manrope", sans-serif;
+    --gradient-text: linear-gradient(90deg, #ff548a, #4cb5fd, #9361ff);
+    --gradient-bar: linear-gradient(90deg, #ff548a, #4cb5fd, #9361ff);
+    --color-bg: #282c34;
+    --color-footer: #666666;
+    --color-blog: #042c54;
+    --color-text: #ffcc49;
+    --color-subtext: #00dddd;
+
+    scroll-behavior: smooth;
+}
