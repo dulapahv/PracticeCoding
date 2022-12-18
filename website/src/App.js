@@ -13,7 +13,7 @@ import "./App.css";
 
 const App = () => {
     return (
-        <div className="App">
+        <div className="App animate-bottom">
             <div className="gradient_bg">
                 <Navbar />
                 <Header />

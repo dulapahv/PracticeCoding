@@ -33,7 +33,13 @@ const Navbar = () => {
             </div>
             <div className="navbar__links--right">
                 <p>
-                    <a href="https://github.com/dulapahv">My Github</a>
+                    <a
+                        href="https://github.com/dulapahv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        My Github
+                    </a>
                 </p>
             </div>
             <div className="navbar__menu">
