@@ -6,11 +6,16 @@ const Aboutme = () => {
     return (
         <div className="aboutme section_margin" id="aboutme">
             <div className="aboutme__heading">
-                <h1 className="gradient_text">
-                    Who I Am?
-                    <br />
-                    What Makes Me Unique?
-                </h1>
+                <h1 className="gradient_text">Who I Am?</h1>
+                <p>
+                    I am experienced in the backend and can also do the
+                    frontend. I am also responsible, and able to cooperate with
+                    other team members. I am looking to improve my skills and
+                    abilities so that I can grow professionally. I will be an
+                    active and valued member in the organization, being
+                    resourceful, innovative, and flexible.
+                </p>
+                <h1 className="gradient_text">What Makes Me Unique?</h1>
             </div>
             <div className="aboutme__container">
                 <Feature
@@ -27,7 +32,9 @@ const Aboutme = () => {
                 />
             </div>
             <div className="timeline__container">
-                <h1 className="gradient_text">My Path to Achieving a Better Education</h1>
+                <h1 className="gradient_text">
+                    My Path to Achieving a Better Education
+                </h1>
                 <div className="timeline__container--content">
                     <Timeline />
                 </div>

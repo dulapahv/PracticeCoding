@@ -4,6 +4,7 @@ import {
     Header,
     Aboutme,
     Experiences,
+    ExperiencesDetail,
     Projects,
     Contact,
     Footer,
@@ -20,6 +21,7 @@ const App = () => {
             </div>
             <Aboutme />
             <Experiences />
+            <ExperiencesDetail />
             <Projects />
             <Contact />
             <Footer />

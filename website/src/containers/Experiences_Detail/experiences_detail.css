@@ -1,0 +1,111 @@
+.experiences-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.experiences-detail__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 60%;
+}
+
+.img--left {
+    margin-right: 5rem;
+}
+
+.img--right {
+    margin-left: 5rem;
+}
+
+.experiences-detail__image img {
+    width: 50%;
+    max-width: 100%;
+}
+
+.experiences-detail__image img:first-child {
+    transform: rotate(7deg);
+}
+
+.experiences-detail__image img:last-child {
+    transform: rotate(-7deg);
+}
+
+.experiences-detail__image--uni {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-column-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.experiences-detail__image--uni img {
+    max-height: 80%;
+}
+
+.experiences-detail__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.experiences-detail__content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 1rem 0;
+}
+
+.experiences-detail__content p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.experiences-detail__content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-highlighted-text);
+}
+
+@media screen and (max-width: 1250px) {
+    .experiences-detail {
+        flex-direction: column;
+        padding-top: 0 !important;
+    }
+    .experiences-detail__image {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+    .experiences-detail__image img {
+        max-width: 45%;
+    }
+    .experiences-detail__content {
+        margin-top: 2rem;
+    }
+    .experiences-detail__content h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .experiences-detail__image {
+        order: -1;
+    }
+    .experiences-detail__image--uni {
+        order: -1;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

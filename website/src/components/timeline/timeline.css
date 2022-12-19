@@ -11,6 +11,11 @@
     font-weight: 500;
 }
 
+.detail {
+    font-weight: 300 !important;
+    font-style: italic;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;

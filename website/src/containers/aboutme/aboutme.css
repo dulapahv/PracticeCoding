@@ -52,7 +52,7 @@
     line-height: 50px;
     font-weight: 800;
     font-family: var(--font-family);
-    width: 500px;
+    width: 460px;
 }
 
 .aboutme h2 {
@@ -60,6 +60,16 @@
     line-height: 30px;
     font-weight: 800;
     font-family: var(--font-family);
+}
+
+.aboutme__heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-text);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .aboutme__container {
