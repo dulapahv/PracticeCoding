@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: left;
+}
+
+.footer div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.footer__heading {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}

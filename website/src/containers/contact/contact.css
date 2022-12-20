@@ -1,0 +1,33 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+}
+
+.contact__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact__heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 85px;
+}
+
+.contact__card {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+    .contact__card {
+        flex-direction: column;
+    }
+}

@@ -9,7 +9,7 @@ import {
     Contact,
     Footer,
 } from "./containers";
-import { Navbar } from "./components";
+import { Navbar, CTA } from "./components";
 import "./App.css";
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
             <Aboutme />
             <Experiences />
             <ExperiencesDetail />
+            <CTA />
             <Projects />
             <Contact />
             <Footer />

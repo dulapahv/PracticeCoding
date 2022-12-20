@@ -37,6 +37,7 @@
         rgba(12, 13, 15, 1) 100%
     );
     --color-footer: #252932;
+    --color-navbar-collapsed: #666666;
     --color-blog: #7a849b;
     --color-text: #fff;
     --color-highlighted-text: #ffcc49;

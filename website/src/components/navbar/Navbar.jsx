@@ -14,15 +14,26 @@ const Menu = () => (
             <a href="#projects">Projects</a>
         </p>
         <p>
-            <a href="#features">Contact</a>
+            <a href="#contact">Contact</a>
         </p>
     </>
 );
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
+    const [isActive, setActive] = useState(false);
+    document.addEventListener("scroll", () => {
+        if (document.scrollingElement.scrollTop) setActive(true);
+        else setActive(false);
+    });
     return (
-        <div className="navbar scale-up-bottom">
+        <div
+            className={
+                isActive
+                    ? "navbar scale-up-bottom navbar-fixed"
+                    : "navbar scale-up-bottom"
+            }
+        >
             <div className="navbar__links--left">
                 <p>
                     <a href="https://dulapahv.github.io/">{">"} DulapahV</a>
@@ -48,13 +59,13 @@ const Navbar = () => {
                         color="#fff"
                         size={27}
                         onClick={() => setToggleMenu(false)}
-                    ></RiCloseLine>
+                    />
                 ) : (
                     <RiMenu3Line
                         color="#fff"
                         size={27}
                         onClick={() => setToggleMenu(true)}
-                    ></RiMenu3Line>
+                    />
                 )}
                 {toggleMenu && (
                     <div className="navbar__menu__container scale-up-tr">

@@ -71,7 +71,7 @@ const ExperiencesDetail = () => {
                         programming language
                     </h1>
                     <p>
-                        Initiated and mentored KMITL freshmen in Python and C
+                        I initiated and mentored KMITL freshmen in Python and C
                         programming language in the SE14 Pre-Session activity.
                         This proves to be very helpful to students who are new
                         to programming.
@@ -99,7 +99,7 @@ const ExperiencesDetail = () => {
                         universities
                     </h1>
                     <p>
-                        Assist in coding to friends in KMITL and other
+                        I assist in coding to friends in KMITL and other
                         universities such as Chulalongkorn University, Thammasat
                         University, Mahidol University, Kasetsart University,
                         The Chinese University of Hong Kong, etc. They all found
