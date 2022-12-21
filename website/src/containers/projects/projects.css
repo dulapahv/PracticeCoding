@@ -34,7 +34,7 @@
     grid-gap: 2rem;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1096px) {
     .projects__container {
         flex-direction: column;
     }
